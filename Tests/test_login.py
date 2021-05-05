@@ -1,3 +1,6 @@
+import pytest
+from Tests.test_base import BaseTest
+
 from Pages.Settings.Settings_page import SettingsPage
 from Pages.Swipe.Swipe_page import SwipePage
 from Pages.Settings.account_page import AccountPage
@@ -7,18 +10,17 @@ from Pages.myprofile_page import MyprofilePage
 from Pages.welcome_page import WelcomePage
 from Tests.data_storage import *
 from random import randrange
-from config.driver import Driver
+from Config.config import Driver
 
 
-class Login_Test():
+class Test_Login(BaseTest):
+
 
   def test_valid_login(self):
     driver = Driver()
     Welcome = WelcomePage(driver.driver)
     Login = LoginPage(driver.driver)
     Swipe = SwipePage(driver.driver)
-
-
     rand = randrange(len(list_correct_username_pass))
     Welcome.clickLogin()
     Login.testLogin(list_correct_username_pass[rand][0], list_correct_username_pass[rand][1])
@@ -32,6 +34,7 @@ class Login_Test():
     settings = SettingsPage(driver.driver)
     profile = MyprofilePage(driver.driver)
     account = AccountPage(driver.driver)
+
 
     menu.go_to_Me()
     profile.go_to_settings()
@@ -64,7 +67,7 @@ class Login_Test():
 
 
 
-LoginTest = Login_Test()
+LoginTest = Test_Login()
 
 LoginTest.test_valid_login()
 LoginTest.test_logout()

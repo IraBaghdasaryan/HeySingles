@@ -38,12 +38,21 @@ class SwipePageLocators:
     _report_block_button = {"by": By.ACCESSIBILITY_ID, "value": "userCardReportAbuseButton"}
     _cancel_button = {"by": By.ACCESSIBILITY_ID, "value": "userCardBlockOrReportCancelButton"}
 
+class IDlocators:
+    _user_Id = {"by":By.ACCESSIBILITY_ID, "value": 	"reportAbuseScreenUserId"}
+
+class BlocorReport:
+    _report_abuse_button = {"by": By.ACCESSIBILITY_ID, "value": "userCardReportAbuseButton"}
+    _block_button = {"by": By.ACCESSIBILITY_ID, "value": "userCardBlockUnblockButton"}
+    _cancel_button = {"by": By.ACCESSIBILITY_ID, "value": "userCardBlockOrReportCancelButton"}
+
 
 class MenuLocators:
-    _search_button = {"by": By.ACCESSIBILITY_ID,  "value": "//android.widget.FrameLayout[@content-desc=\"Search, tab, 1 out of 4\"]/android.widget.TextView"}
-    _swipe_button = {"by": By.ACCESSIBILITY_ID, "value": "//android.widget.FrameLayout[@content-desc=\"Search, tab, 1 out of 4\"]/android.widget.TextView"}
-    _chat_button = {"by": By.ACCESSIBILITY_ID, "value": "//android.widget.FrameLayout[@content-desc=\"Chat, tab, 3 out of 4\"]/android.widget.ImageView"}
-    _me_button = {"by": By.ACCESSIBILITY_ID, "value": "//android.widget.FrameLayout[@content-desc=\"Me, tab, 4 out of 4\"]/android.widget.ImageView"}
+    _search_button = {"by": By.XPATH,  "value": "//android.widget.FrameLayout[@content-desc=\"Search, tab, 1 out of 4\"]/android.widget.TextView"}
+    _swipe_button = {"by": By.XPATH, "value": "//android.widget.FrameLayout[@content-desc=\"Search, tab, 1 out of 4\"]/android.widget.TextView"}
+    _chat_button = {"by": By.XPATH, "value": "//android.widget.FrameLayout[@content-desc=\"Chat, tab, 3 out of 4\"]/android.widget.ImageView"}
+    _me_button = {"by": By.XPATH, "value": "//android.widget.FrameLayout[@content-desc=\"Me, tab, 4 out of 4\"]/android.widget.TextView"}
+
 
 
 class SwipeFilterLocator:
@@ -63,10 +72,10 @@ class SwipeLocationLocators:
 
 
 
-
 class MyProfile:
     _settings_button = {"by": By.ACCESSIBILITY_ID, "value": "mainProfileSettingsIcon"}
     _need_help_button = {"by": By.ACCESSIBILITY_ID, "value": "//android.view.View[@content-desc=\"%3Fgclid%3DEAIaIQobChMIm8_bjYPY7wIVCca7CB1OOAP5EAEYASAAEgKyzPD_BwE\"]/android.view.View"}
+    _credits_number = {"by": By.XPATH, "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.widget.TextView[1]"}
 
 
 class Settings:
@@ -98,3 +107,65 @@ class BlockedUsers:
     _unblock_selected_button = {"by": By.ACCESSIBILITY_ID, "value": "blockedUsersUnblockSelectedButton"}
     _back_button = {"by": By.ACCESSIBILITY_ID, "value": "backButton"}
 
+class GiftLocators:
+    _romatic_gift_category = {"by": By.ACCESSIBILITY_ID, "value": "giftCategoryContainerRomatic"}
+    _friendship_gift_category = {"by": By.ACCESSIBILITY_ID, "value": "giftCategoryContainerFriendship"}
+    _birthday_gift_category = {"by": By.ACCESSIBILITY_ID, "value": "giftCategoryContainerBirthday"}
+    _holidays_gift_category = {"by": By.ACCESSIBILITY_ID, "value": "giftCategoryContainerHolidays"}
+    _select_gift_screen_category = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory"}
+    _select_gift_screen_credits = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCredits"}
+    _category  = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory"}
+    _gift_credits = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCredits"}
+    _romantic_gift_selector_rose = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/1.png"}
+    _romantic_gift_selector_kiss = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/2.png"}
+    _romantic_gift_selector_heart = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/3.png"}
+    _romantic_gift_selector_bear = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/4.png"}
+    _romantic_gift_selector_heart_ring = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/5.png"}
+    _romantic_gift_selector_chili = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/6.png"}
+    _romantic_gift_selector_pearl = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/7.png"}
+    _romantic_gift_selector_heart_rose = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/8.png"}
+    _romantic_gift_selector_leaf_rose = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/9.png"}
+    _romantic_gift_selector_basket_rose = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/10.png"}
+    _romantic_gift_selector_cherry = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/11.png"}
+    _romantic_gift_selector_diamond = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/12.png"}
+    _friendship_gift_selector_coffee = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/13.png"}
+    _friendship_gift_selector_flower = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/14.png"}
+    _friendship_gift_selector_strawberry = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/15.png"}
+    _friendship_gift_selector_cake = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/16.png"}
+    _friendship_gift_selector_butterfly = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/17.png"}
+    _friendship_gift_selector_cocktail = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/18.png"}
+    _friendship_gift_selector_water_lily = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/19.png"}
+    _friendship_gift_selector_balloon = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/20.png"}
+    _birthday_gift_selector_cake = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/21.png"}
+    _birthday_gift_selector_wishing = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/22.png"}
+    _birthday_gift_selector_bear = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/23.png"}
+    _birthday_gift_selector_rabbit = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/24.png"}
+    _birthday_gift_selector_box = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/25.png"}
+    _birthday_gift_selector_balloons = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/26.png"}
+    _birthday_gift_selector_rose = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/27.png"}
+    _birthday_gift_selector_champain = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/28.png"}
+    _holiday_gift_selector_bunny = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/29.png"}
+    _holiday_gift_selector_basket_of_eggs = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/30.png"}
+    _holiday_gift_selector_egg = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/31.png"}
+    _holiday_gift_selector_basket = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/32.png"}
+    _holiday_gift_selector_christmas_tree = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/33.png"}
+    _holiday_gift_selector_omela = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/34.png"}
+    _holiday_gift_selector_hat = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/35.png"}
+    _holiday_gift_selector_champain = {"by": By.ACCESSIBILITY_ID, "value": "selectGiftScreenCategory/images/virtual_gifts_new/36.png"}
+    _gift_slider_left_arrow = {"by": By.ACCESSIBILITY_ID, "value": "giftSliderLeftArrow"}
+    _gift_slider_right_arrow = {"by": By.ACCESSIBILITY_ID, "value": "giftSliderRightArrow"}
+    _send_gift_screen_message_input = {"by": By.ACCESSIBILITY_ID, "value": "sendGiftScreenMessageInput"}
+    _send_gift_screen_paid_button = {"by": By.ACCESSIBILITY_ID, "value": "sendPaidGiftButton"}
+
+class Chat:
+    _all_contacts = {"by": By.ACCESSIBILITY_ID, "value": "allConnections-connectionName}"}
+    _chats = {"by": By.ACCESSIBILITY_ID, "value": "chats-connectionName}"}
+    visits = {"by": By.ACCESSIBILITY_ID, "value": "visitors-connectionName}"}
+    _winks = {"by": By.ACCESSIBILITY_ID, "value": "winks-connectionName}"}
+    _favorites = {"by": By.ACCESSIBILITY_ID, "value": "favorites-connectionName}"}
+    _birthday = {"by": By.ACCESSIBILITY_ID, "value": "birthdays-connectionName}"}
+    _gifts = {"by": By.ACCESSIBILITY_ID, "value": "gifts-connectionName}"}
+    _all_contacts_first_contact = {"by": By.XPATH, "value": "(//android.view.ViewGroup[@content-desc=\"chatUser\"])[1]"}
+    _back_from_chat = {"by": By.XPATH, "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]"}
+    _chat_favorite = {"by": By.XPATH, "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"}
+    _chat_text = {"by": By.XPATH, "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText"}

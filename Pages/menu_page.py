@@ -11,3 +11,4 @@ class MenuPage:
     def go_to_Me(self):
         self.actions._wait_for_element(MenuLocators._me_button)
         self.actions._click(MenuLocators._me_button)
+        self.actions._is_displayed(MyProfile._settings_button)

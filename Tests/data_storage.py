@@ -1,6 +1,6 @@
 #alldata
 
-list_correct_username_pass = [("aaaaaa@aaa.aaa", "aaaaaa"), ("bbbbbb@bbb.bbb", "bbbbbb"),("cccccc@ccc.ccc", "cccccc")]
+list_correct_username_pass = [("aaaaaa@aaa.aaa", "aaaaaa"), ("bbbbbb@bbb.bbb", "bbbbbb")]
 
 list_wrong_username = [("aaa", "aaaaaa"), ("aaaa@1111", "bbbbbba"), ("%111@11.aaa", "cccccc")]
 

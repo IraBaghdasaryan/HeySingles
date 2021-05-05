@@ -4,7 +4,7 @@ desired_cap = {
     "platformName": "Android",
     "platformVersion": "11",
     "appPackage": "com.sevastin.datingwalk",
-    "app": "C:\\Users\\Admin\\Downloads\\app-arm64-v8a-release (7).apk",
+    "app": "C:\\Users\\Admin\\Downloads\\app-arm64-v8a-release (10).apk",
     "noReset": 'true',
     "fullReset": 'false',
     "automationName": 'UiAutomator2',

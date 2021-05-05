@@ -1,5 +1,9 @@
-from appium import webdriver
-from config.options import desired_cap, options
+import pytest
+from selenium import webdriver
+
+
+from Config.options import desired_cap, options
+import pytest
 
 class Driver():
     def __init__(self):
@@ -10,6 +14,3 @@ class Driver():
 
     def tearDown(self):
         self.driver.quit()
-
-
-
